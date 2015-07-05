@@ -13,6 +13,7 @@ function toM() {
     return to + content + to;
   });
 
+
   converted = converted.replace(/\{\{([^}]+)\}\}/g, '`$1`');
   converted = converted.replace(/\?\?((?:.[^?]|[^?].)+)\?\?/g, '<cite>$1</cite>');
   converted = converted.replace(/\+([^+]*)\+/g, '<ins>$1</ins>');
